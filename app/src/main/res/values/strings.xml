@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WholeTrack</string>
+    <string name="title_home">Home</string>
+    <string name="title_exercise">Exercise</string>
+    <string name="title_diet">Diet</string>
+    <string name="title_sleep">Sleep</string>
+
+</resources>
