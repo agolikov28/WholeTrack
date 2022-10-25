@@ -14,7 +14,8 @@
     <item
         android:id="@+id/navigation_diet"
         android:icon="@drawable/diet_icon"
-        android:title="@string/title_diet" />
+        android:title="@string/title_diet"
+        />
 
     <item
         android:id="@+id/navigation_sleep"
