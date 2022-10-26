@@ -18,4 +18,22 @@
 
     <color name="white">#FFFFFFFF</color>
 
+
+    <color name="bg_screen1">#8896E7</color>
+    <color name="bg_screen2">#9BA9FF</color>
+    <color name="bg_screen3">#A5ADFF</color>
+    <color name="bg_screen4">#AFB1FF</color>
+    <array name="array_dot_active">
+        <item>#BFCEFF</item>
+        <item>#BFC2FF</item>
+        <item>#C8BFFF</item>
+        <item>#D3BFFF</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>#6779E0</item>
+        <item>#7083FF</item>
+        <item>#858FFF</item>
+        <item>#8587FF</item>
+    </array>
+
 </resources>
