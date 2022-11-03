@@ -46,11 +46,7 @@ public class DietFragment extends Fragment {
         final LinearLayout foodForm = binding.foodForm;
 
         // Daily summary items:
-        TextView calories, fats, carbs, proteins;
-        calories = binding.dailyCal;
-        fats = binding.foodFat;
-        carbs = binding.dailyCarb;
-        proteins = binding.dailyProt;
+
 
         // food form elements
         TextView error = binding.formError;
