@@ -5,7 +5,7 @@
             android:id="@+id/mybutton"
             android:title="My Profile"
             app:showAsAction="always"
-            android:iconTint="@color/darkPurple"
-            android:icon="@drawable/darkprofile_icon"
+            android:iconTint="@color/white"
+            android:icon="@drawable/whiteprofile_icon"
             />
 </menu>

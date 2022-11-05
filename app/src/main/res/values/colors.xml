@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-
     <color name="whiteTint">#EFF2FF</color>
     <color name="darkPurple">#1D1360</color>
     <color name="bluePurple">#5963EA</color>
@@ -15,25 +9,23 @@
     <color name="buttonWhite">#F5F7FF</color>
     <color name="buttonPurple">#94A3EB</color>
     <color name="iconChosen">#7A8CCC</color>
-
     <color name="white">#FFFFFFFF</color>
 
-
-    <color name="bg_screen1">#8896E7</color>
-    <color name="bg_screen2">#9BA9FF</color>
-    <color name="bg_screen3">#A5ADFF</color>
-    <color name="bg_screen4">#AFB1FF</color>
+    <color name="bg_screen1">#7d41ce</color>
+    <color name="bg_screen2">#fd9d1b</color>
+    <color name="bg_screen3">#48a204</color>
+    <color name="bg_screen4">#4252cc</color>
     <array name="array_dot_active">
-        <item>#BFCEFF</item>
-        <item>#BFC2FF</item>
-        <item>#C8BFFF</item>
-        <item>#D3BFFF</item>
+        <item>#94A3EB</item>
+        <item>#FF9385</item>i
+        <item>#B7CF7A</item>
+        <item>#9CCCD9</item>
     </array>
     <array name="array_dot_inactive">
-        <item>#6779E0</item>
-        <item>#7083FF</item>
-        <item>#858FFF</item>
-        <item>#8587FF</item>
+        <item>#403554</item>
+        <item>#8a2215</item>
+        <item>#464F2F</item>
+        <item>#135061</item>
     </array>
 
 </resources>

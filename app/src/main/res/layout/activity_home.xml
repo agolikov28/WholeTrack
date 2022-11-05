@@ -37,10 +37,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="10dp"
-
         android:background="@null"
         android:fontFamily="@font/avant_med"
-        android:text="Next"
+        android:textSize="18dp"
+        android:text="NEXT"
         android:textColor="@color/buttonWhite" />
 
     <Button
@@ -52,6 +52,7 @@
         android:layout_marginLeft="10dp"
         android:background="@null"
         android:fontFamily="@font/avant_med"
-        android:text="skip"
+        android:textSize="18dp"
+        android:text="SKIP"
         android:textColor="@color/buttonWhite" />
 </RelativeLayout>
