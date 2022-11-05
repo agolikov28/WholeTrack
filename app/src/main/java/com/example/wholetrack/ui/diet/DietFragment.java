@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.io.*;
 import java.util.Arrays;
 import androidx.annotation.NonNull;
@@ -80,7 +82,7 @@ public class DietFragment extends Fragment {
         buttonFood.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                if (buttonFood.getText().equals("Close Food Menu")){
+                if (buttonFood.getText().equals("Close Data Entry")){
                     foodForm.setVisibility(View.GONE);
                     buttonFood.setText("Enter New Data");
                     buttonManual.setText("Or Enter Data Manually");
@@ -95,7 +97,7 @@ public class DietFragment extends Fragment {
 
                 } else{
                     foodForm.setVisibility(View.VISIBLE);
-                    buttonFood.setText("Close Food Menu");
+                    buttonFood.setText("Close Data Entry");
                     manualEnter.setVisibility(View.GONE);
                     foodList.setVisibility(View.VISIBLE);
                     selectLabal.setVisibility(View.VISIBLE);
@@ -166,7 +168,9 @@ public class DietFragment extends Fragment {
                         foodCarb.setText("");
                         foodProtein.setText("");
                         foodFat.setText("");
-
+                        Toast toast = Toast.makeText(getContext(), "Submit not yet implemented", Toast.LENGTH_SHORT);
+                        // to show the toast
+                        toast.show();
                     }else{
                         error.setVisibility(View.VISIBLE);
                     }
@@ -176,7 +180,9 @@ public class DietFragment extends Fragment {
                     buttonFood.setText("Enter New Data");
                     buttonManual.setText("Or Enter Data Manually");
                     error.setVisibility(View.GONE);
-
+                    Toast toast = Toast.makeText(getContext(), "Submit not yet implemented", Toast.LENGTH_SHORT);
+                    // to show the toast
+                    toast.show();
                     foodName.setText("");
                     foodCalorie.setText("");
                     foodCarb.setText("");

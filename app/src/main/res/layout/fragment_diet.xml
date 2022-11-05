@@ -189,13 +189,19 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Daily Summary:" />
+                android:text="Today's Diet Breakdown:" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/dietpiechart" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekly Intake Amounts" />
 
             <ImageView
                 android:id="@+id/imageView2"
