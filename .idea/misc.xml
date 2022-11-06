@@ -35,6 +35,26 @@
         <entry key="..\:/Users/arina/Documents/UMD classes/CMSC434/WholeTrack/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2972222222222222" />
         <entry key="..\:/Users/arina/Documents/UMD classes/CMSC434/WholeTrack/app/src/main/res/menu/mymenu.xml" value="0.22" />
         <entry key="..\:/Users/arina/Documents/UMD classes/CMSC434/WholeTrack/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1315" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1335" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.168" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1335" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/font/fonts.xml" value="0.10277777777777777" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/activity_arm.xml" value="0.15384615384615385" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/activity_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_arm.xml" value="0.22" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_cardio.xml" value="0.25" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_chest.xml" value="0.25" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_diet.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_exercise.xml" value="0.2094017094017094" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_legs.xml" value="0.25" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/fragment_sleep.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/slide1.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/slide3.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/layout/slide4.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Users/steph/Documents/GitHub/WholeTrack/app/src/main/res/menu/mymenu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

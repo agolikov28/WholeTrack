@@ -26,5 +26,9 @@
         android:id="@+id/navigation_sleep"
         android:name="com.example.wholetrack.ui.sleep.SleepFragment"
         android:label="@string/title_sleep"
-        tools:layout="@layout/fragment_sleep" />
+        tools:layout="@layout/fragment_sleep" >
+        <action
+            android:id="@+id/action_navigation_sleep_self"
+            app:destination="@id/navigation_sleep" />
+    </fragment>
 </navigation>

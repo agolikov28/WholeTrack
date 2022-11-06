@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exercise.ChestFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700sp">
+
+                <Button
+                    android:id="@+id/startb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="48dp"
+                    android:text="Start"
+                    android:background="@color/buttonPurple"
+                    android:textColor="@color/buttonWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <Button
+                    android:id="@+id/goingback"
+                    android:layout_width="338dp"
+                    android:layout_height="42dp"
+                    android:text="Back to previous page"
+                    android:background="@color/buttonPurple"
+                    android:textColor="@color/buttonWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.325"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="6dp" />
+
+                <Button
+                    android:id="@+id/resetb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Reset"
+                    android:background="@color/buttonPurple"
+                    android:textColor="@color/buttonWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    android:visibility="invisible"
+                    tools:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="332dp"
+                    android:layout_height="119dp"
+                    android:layout_marginTop="16dp"
+                    android:text="For the chest, you will be doing Chest Butterfly, bench press and dips. Try to do these three exercises in 10 minutes
+with 1 minute of rest each time. Use the timer below to track you workout. You can
+customize the timer to make it more challenging."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.307"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/goingback" />
+
+                <TextView
+                    android:id="@+id/timeview"
+                    android:layout_width="83dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="36dp"
+                    android:text="00:00"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toStartOf="@+id/resetb"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/startb"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <Button
+                    android:id="@+id/customtimer"
+                    android:layout_width="349dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="36dp"
+                    android:text="Customize timer"
+                    android:background="@color/buttonPurple"
+                    android:textColor="@color/buttonWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.516"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/timeview" />
+
+                <Button
+                    android:id="@+id/entercostumetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@color/buttonPurple"
+                    android:text="Enter"
+                    android:textColor="@color/buttonWhite"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/startb"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/timecostumeEdit"
+                    android:layout_width="199dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:hint="10"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toEndOf="@+id/entercostumetime"
+                    app:layout_constraintTop_toBottomOf="@+id/resetb"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="190dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="48dp"
+                    android:text="Chest Butterfly 10 times x2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/customtimer" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="188dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="36dp"
+                    android:text="Bench Press 10 times x2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="178dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Push Ups 10 times x2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="110dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/butterflychest"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/customtimer" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="110dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/press"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="110dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/push"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
