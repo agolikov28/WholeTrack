@@ -1,20 +1,41 @@
 package com.example.wholetrack;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.wholetrack.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private Button btnProfile;
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+    private EditText userName, weight, height, age;
+    private Button editInfo, exitProfile, saveChanges;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +68,15 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.mybutton) {
-            // enter profile fragment/activity
+
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
         }
+
         return super.onOptionsItemSelected(item);
     }
+
+    //      Toast.makeText(getApplicationContext(),"UNDER CONSTRUCTION", Toast.LENGTH_SHORT).show();
+
 
 }

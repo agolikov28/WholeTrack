@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="385dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/asset_52">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rect"
+        android:fontFamily="@font/avant_book"
+        android:letterSpacing="0.05"
+        android:padding="10dp"
+        android:text="Jane Doe"
+        android:textAlignment="center"
+        android:textColor="@color/whiteTint"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/avant_med"
+        android:letterSpacing="0.05"
+        android:text="25 years old"
+        android:textColor="@color/whiteTint"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="40dp"
+
+        android:fontFamily="@font/avant_med"
+        android:letterSpacing="0.05"
+        android:text="155 lbs"
+        android:textColor="@color/whiteTint"
+        android:textColorHint="@color/whiteTint"
+        android:textCursorDrawable="@null"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/avant_med"
+        android:letterSpacing="0.05"
+        android:text="5 feet 5 inches"
+        android:textColor="@color/whiteTint"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/bmiTitle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="370dp"
+        android:fontFamily="@font/avant_med"
+        android:letterSpacing="0.05"
+        android:text="YOUR BMI: 26"
+        android:textColor="@color/whiteTint"
+        android:textSize="35dp"
+        android:background="@drawable/rect"
+        android:backgroundTint="@color/bg_screen3"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect"
+        android:backgroundTint="@color/darkPurple"
+        android:fontFamily="@font/avant_book"
+        android:letterSpacing="0.05"
+        android:text="X"
+        android:textColor="@color/whiteTint"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/goalBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/circle"
+        android:fontFamily="@font/avant_book"
+        android:letterSpacing="0.05"
+        android:text="VIEW\nYOUR\nGOALS"
+        android:textColor="@color/whiteTint"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rect"
+        android:fontFamily="@font/avant_book"
+        android:gravity="center"
+        android:letterSpacing="0.05"
+        android:text="EDIT PROFILE"
+        android:textColor="@color/whiteTint"
+        android:textSize="25dp" />
+
+</RelativeLayout>
