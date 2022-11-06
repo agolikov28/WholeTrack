@@ -23,11 +23,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/avant_bold"
             android:lineSpacingExtra="6dp"
             android:orientation="vertical"
             android:padding="10dp"
             android:text="CHOOSE THE PART OF THE BODY\nYOU WOULD LIKE TO WORK ON:"
+            android:fontFamily="@font/avant_bold"
             android:textAlignment="center"
             android:textColor="@color/darkPurple"
             android:textSize="15dp" />

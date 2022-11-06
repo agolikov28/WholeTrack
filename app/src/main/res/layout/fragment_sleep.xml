@@ -20,9 +20,17 @@
                 android:id="@+id/butto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/avant_bold"
+                android:padding="8dp"
                 android:text="Enter Sleep Information"
                 android:textAlignment="center"
-                android:layout_gravity="center_horizontal"/>
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -38,8 +46,13 @@
                         android:id="@+id/error"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/lightPurple"
+                        android:fontFamily="@font/avant_med"
+                        android:layout_marginTop="20dp"
+                        android:text="Please fill in all information before saving"
                         android:textAlignment="center"
-                        android:text="Please fill in all information before saving" />
+                        android:textColor="@color/darkPurple"
+                        android:textSize="15dp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -51,7 +64,11 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sunday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Sunday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/su"
@@ -59,6 +76,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
+                            android:backgroundTint="@color/darkPurple"
                             android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
@@ -72,15 +90,22 @@
                             android:id="@+id/foodCalorieLabel"
                             android:layout_width="165dp"
                             android:layout_height="wrap_content"
-                            android:text="Monday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Monday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/mo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:backgroundTint="@color/darkPurple"
+
                             android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -91,16 +116,23 @@
                             android:layout_width="126dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Tuesday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Tuesday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/tu"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+
+                            android:backgroundTint="@color/darkPurple"
                             android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -111,13 +143,19 @@
                             android:layout_width="126dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Wednesday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Wednesday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/we"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+
+                            android:backgroundTint="@color/darkPurple"
                             android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
@@ -131,12 +169,18 @@
                             android:id="@+id/foodCieLabel"
                             android:layout_width="165dp"
                             android:layout_height="wrap_content"
-                            android:text="Thursday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Thursday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/thu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:backgroundTint="@color/darkPurple"
+
                             android:ems="10"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
@@ -150,13 +194,19 @@
                             android:id="@+id/CalorieLabel"
                             android:layout_width="165dp"
                             android:layout_height="wrap_content"
-                            android:text="Friday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Friday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/fr"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:backgroundTint="@color/darkPurple"
                             android:ems="5"
+
                             android:inputType="numberDecimal" />
                     </LinearLayout>
 
@@ -169,12 +219,18 @@
                             android:id="@+id/sayyyy"
                             android:layout_width="165dp"
                             android:layout_height="wrap_content"
-                            android:text="Saturday:" />
+                            android:fontFamily="@font/avant_med"
+                            android:text="Saturday:"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPurple"
+                            android:textSize="20dp" />
 
                         <EditText
                             android:id="@+id/sa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:backgroundTint="@color/darkPurple"
+
                             android:ems="5"
                             android:inputType="numberDecimal" />
                     </LinearLayout>
@@ -187,16 +243,24 @@
                 android:id="@+id/summ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/avant_bold"
                 android:text="Weekly Sleep Summary"
                 android:textAlignment="center"
-                android:layout_marginBottom="3dp"
-                android:layout_gravity="center_horizontal"/>
+                android:textColor="@color/darkPurple"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/aveSleep"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Average Sleep (hours): 7.57"/>
+                android:fontFamily="@font/avant_med"
+                android:text="Average Sleep (hours): 7.57"
+                android:textAlignment="center"
+                android:textColor="@color/darkPurple"
+                android:textSize="15dp" />
 
             <!--<com.github.mikephil.charting.charts.BarChart
                 android:id="@+id/barChart"
@@ -208,13 +272,17 @@
                 android:id="@+id/chartImg"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/chart_exbet"/>
+                android:src="@drawable/chart_exbet" />
 
             <TextView
                 android:id="@+id/sleepAnalysis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="You are not meeting your daily sleep goal. It is recommended that you sleep earlier." />
+                android:fontFamily="@font/avant_med"
+                android:text="You are not meeting your daily sleep goal. It is recommended that you sleep earlier."
+                android:textAlignment="center"
+                android:textColor="@color/darkPurple"
+                android:textSize="15dp" />
 
         </LinearLayout>
 
