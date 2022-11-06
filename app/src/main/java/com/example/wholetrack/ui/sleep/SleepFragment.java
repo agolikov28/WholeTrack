@@ -15,13 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.wholetrack.databinding.FragmentSleepBinding;
-import com.github.mikephil.charting.charts.HorizontalBarChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.ValueFormatter;
-import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+
 
 import java.util.ArrayList;
 
@@ -35,7 +29,7 @@ public class SleepFragment extends Fragment {
     private static final int MIN_Y_VALUE = 0;
     private static final String SET_LABEL = "Average Sleep";
     private static final String[] DAYS = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };
-    private HorizontalBarChart chart;
+    //private HorizontalBarChart chart;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -111,47 +105,47 @@ public class SleepFragment extends Fragment {
         return root;
     }
 
-    private void prepareChartData(BarData data) {
-        data.setValueTextSize(12f);
-        chart.setData(data);
-        chart.invalidate();
-    }
+//    private void prepareChartData(BarData data) {
+//        data.setValueTextSize(12f);
+//        chart.setData(data);
+//        chart.invalidate();
+//    }
 
-    private BarData createChartData() {
-        ArrayList<BarEntry> values = new ArrayList<>();
-        for (int i = 0; i < MAX_X_VALUE; i++) {
-            float x = i;
-            float y = 5;
-            values.add(new BarEntry(x, y));
-        }
+//    private BarData createChartData() {
+//        ArrayList<BarEntry> values = new ArrayList<>();
+//        for (int i = 0; i < MAX_X_VALUE; i++) {
+//            float x = i;
+//            float y = 5;
+//            values.add(new BarEntry(x, y));
+//        }
+//
+//        BarDataSet set1 = new BarDataSet(values, SET_LABEL);
+//
+//        ArrayList<IBarDataSet> dataSets = new ArrayList<>();
+//        dataSets.add(set1);
+//
+//        BarData data = new BarData(dataSets);
+//
+//        return data;
+//    }
 
-        BarDataSet set1 = new BarDataSet(values, SET_LABEL);
-
-        ArrayList<IBarDataSet> dataSets = new ArrayList<>();
-        dataSets.add(set1);
-
-        BarData data = new BarData(dataSets);
-
-        return data;
-    }
-
-    private void configureChartAppearance() {
-        chart.getDescription().setEnabled(false);
-
-        XAxis xAxis = chart.getXAxis();
-        xAxis.setValueFormatter(new ValueFormatter() {
-            @Override
-            public String getFormattedValue(float value) {
-                return DAYS[(int) value];
-            }
-        });
-    }
-
-    /*public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-
-    }*/
+//    private void configureChartAppearance() {
+//        chart.getDescription().setEnabled(false);
+//
+//        XAxis xAxis = chart.getXAxis();
+//        xAxis.setValueFormatter(new ValueFormatter() {
+//            @Override
+//            public String getFormattedValue(float value) {
+//                return DAYS[(int) value];
+//            }
+//        });
+//    }
+//
+//    /*public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//
+//
+//    }*/
 
     @Override
     public void onDestroyView() {
