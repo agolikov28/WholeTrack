@@ -7,17 +7,142 @@
     tools:context=".ui.home.HomeFragment">
 
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/avant_med"
+                android:text="Welcome back, Jane!"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sleepAnalysis2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avant_med"
+                android:text="\nCurrent Weight: 155lbs\nBMI: 26
+                \nMeeting exercise goal:YES\nMeeting diet goal: YES\nMeeting Sleep goal: NO"
+                android:textAlignment="center"
+                android:textColor="@color/darkPurple"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rect"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/avant_bold"
+                android:padding="8dp"
+                android:text="See/change goals"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/avant_med"
+                android:text="Exercise Summary:"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+            <ImageView
+                android:id="@+id/chartImg0"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/weeklyworkouts" />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rect"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/avant_bold"
+                android:padding="8dp"
+                android:text="See more exercise info"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/avant_med"
+                android:text="Diet Summary:"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dietpiechart" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rect"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/avant_bold"
+                android:padding="8dp"
+                android:text="See more diet info"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/avant_med"
+                android:text="Sleep Summary:"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/chartImg2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/chart_exbet" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rect"
+                android:backgroundTint="@color/lightPurple"
+                android:fontFamily="@font/avant_bold"
+                android:padding="8dp"
+                android:text="See more sleep info"
+                android:textColor="@color/darkPurple"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n\n" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
