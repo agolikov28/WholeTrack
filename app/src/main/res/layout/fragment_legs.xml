@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.exercise.LegsFragment">
+    tools:context=".ui.exercise.ChestFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,36 +12,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="650sp">
-
-                <TextView
-                    android:id="@+id/timeview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="28dp"
-                    android:fontFamily="@font/avant_book"
-                    android:text="00:00"
-                    android:textColor="@color/darkPurple"
-                    android:textSize="50sp"
-
-                    app:layout_constraintEnd_toStartOf="@+id/resetb"
-                    app:layout_constraintHorizontal_bias="0.477"
-                    app:layout_constraintStart_toEndOf="@+id/startb"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/startb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="15dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
                     android:fontFamily="@font/avant_bold"
@@ -50,31 +33,11 @@
                     android:textColor="@color/darkPurple"
                     android:textSize="20dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-                <Button
-                    android:id="@+id/resetb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/rect"
-                    android:backgroundTint="@color/lightPurple"
-                    android:fontFamily="@font/avant_bold"
-                    android:padding="8dp"
-                    android:text="Reset"
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    android:visibility="invisible"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5"
-                    tools:visibility="visible" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <Button
                     android:id="@+id/goingback"
-                    android:layout_width="383dp"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -89,29 +52,59 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="229dp"
+                <Button
+                    android:id="@+id/resetb"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/lightPurple"
+                    android:fontFamily="@font/avant_bold"
+                    android:padding="8dp"
+                    android:text="Reset"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="70dp"
                     android:fontFamily="@font/avant_med"
-                    android:text="Squats 10 times.\nAdd weight as needed\nRepeat X2."
+                    android:padding="15dp"
+                    android:text="For the legs, you will be doing squats, split squats and leg lifts. Try to do these three exercises below in 10 minutes with 1 minute of rest each time. Use the timer below to track you workout. You can customize the timer to make it more challenging."
                     android:textColor="@color/darkPurple"
                     android:textSize="20dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/customtimer" />
+                    app:layout_constraintTop_toBottomOf="@+id/goingback" />
+
+                <TextView
+                    android:id="@+id/timeview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/avant_book"
+                    android:text="00:00"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="50sp"
+
+                    app:layout_constraintEnd_toStartOf="@+id/resetb"
+                    app:layout_constraintHorizontal_bias="0.477"
+                    app:layout_constraintStart_toEndOf="@+id/startb"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <Button
                     android:id="@+id/customtimer"
-                    android:layout_width="377dp"
+                    android:layout_width="350dp"
                     android:layout_height="60dp"
                     android:layout_below="@+id/timeview"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
@@ -125,61 +118,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/timeview" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="229dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/customtimer"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="28dp"
-                    android:fontFamily="@font/avant_med"
-                    android:text="Split Squats 5 times.\nAlternate your legs.\nRepeat X2."
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="222dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView2"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="40dp"
-                    android:fontFamily="@font/avant_med"
-                    android:text="Leg Lifts 10 times.\nPractice each leg.\nRepeat X2."
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="380dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView4"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/avant_med"
-                    android:text="For the legs, you will be doing squats, split squats and leg lifts. Try to do these three exercises below in 10 minutes with 1 minute of rest each time. Use the timer below to track you workout. You can customize the timer to make it more challenging."
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/goingback" />
-
                 <Button
-                    android:id="@+id/entercostumetime"
+                    android:id="@+id/entercustomtime"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="60dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="53dp"
+                    android:layout_marginStart="15dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
                     android:fontFamily="@font/avant_bold"
@@ -189,21 +134,21 @@
                     android:textSize="20dp"
                     android:visibility="invisible"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/startb"
+                    app:layout_constraintTop_toBottomOf="@+id/timeview"
                     tools:visibility="visible" />
 
                 <EditText
-                    android:id="@+id/timecostumeEdit"
+                    android:id="@+id/timecustomEdit"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="120dp"
                     android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/darkPurple"
                     android:ems="10"
                     android:fontFamily="@font/avant_bold"
                     android:hint="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:padding="8dp"
                     android:textAlignment="center"
                     android:textColor="@color/darkPurple"
@@ -211,46 +156,94 @@
                     android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.865"
-                    app:layout_constraintStart_toEndOf="@+id/entercostumetime"
-                    app:layout_constraintTop_toBottomOf="@+id/resetb"
+                    app:layout_constraintStart_toEndOf="@+id/entercustomtime"
+                    app:layout_constraintTop_toBottomOf="@+id/timeview"
                     tools:visibility="visible" />
 
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/avant_med"
+                    android:text="Squats 10 times.\nAdd weight as needed\nRepeat X2."
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/customtimer" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customtimer"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avant_med"
+                    android:text="Split Squats 5 times.\nAlternate your legs.\nRepeat X2."
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customtimer"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avant_med"
+                    android:text="Leg Lifts 10 times.\nPractice each leg.\nRepeat X2."
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageView7"
                     android:layout_width="110dp"
                     android:layout_height="68dp"
                     android:layout_marginStart="35dp"
                     android:layout_marginTop="20dp"
-                    android:src="@drawable/splits"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView3"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="110dp"
-                    android:layout_height="68dp"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="25dp"
-                    android:src="@drawable/leglift"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView4"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="110dp"
-                    android:layout_height="68dp"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="70dp"
                     android:src="@drawable/squats"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
                     app:layout_constraintTop_toBottomOf="@+id/customtimer" />
 
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="110dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/splits"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="110dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/leglift"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView8" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.exercise.CardioFragment">
+    tools:context=".ui.exercise.ChestFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,16 +12,32 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="550sp">
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/startb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/lightPurple"
+                    android:fontFamily="@font/avant_bold"
+                    android:padding="8dp"
+                    android:text="start"
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <Button
                     android:id="@+id/goingback"
-                    android:layout_width="383dp"
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
@@ -37,29 +53,11 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/startb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="28dp"
-                    android:background="@drawable/rect"
-                    android:backgroundTint="@color/lightPurple"
-                    android:fontFamily="@font/avant_bold"
-                    android:padding="8dp"
-                    android:text="start"
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-                <Button
                     android:id="@+id/resetb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="28dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
@@ -70,30 +68,45 @@
                     android:textSize="20dp"
                     android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
                     tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/avant_med"
+                    android:padding="15dp"
+                    android:text="For Cardio, you will be running for 30 minutes.
+use the timer below to track your workout. You can customize the timer to put you prefer time to make it
+more challenging."
+                    android:textColor="@color/darkPurple"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/goingback" />
 
                 <TextView
                     android:id="@+id/timeview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="00:00"
-                    android:textSize="50sp"
+                    android:layout_alignParentTop="true"
                     android:fontFamily="@font/avant_book"
+                    android:text="00:00"
                     android:textColor="@color/darkPurple"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                    android:textSize="50sp"
+
+                    app:layout_constraintEnd_toStartOf="@+id/resetb"
+                    app:layout_constraintHorizontal_bias="0.477"
+                    app:layout_constraintStart_toEndOf="@+id/startb"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <Button
                     android:id="@+id/customtimer"
-                    android:layout_width="377dp"
+                    android:layout_width="350dp"
                     android:layout_height="60dp"
                     android:layout_below="@+id/timeview"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
@@ -106,34 +119,13 @@
                     app:layout_constraintHorizontal_bias="0.857"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/timeview" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="380dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="15dp"
-
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/avant_med"
-
-                    android:text="For Cardio, you will be running for 30 minutes.
-use the timer below to track your workout. You can customize the timer to put you prefer time to make it
-more challenging."
-                    android:textColor="@color/darkPurple"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="parent"
-
-                    app:layout_constraintTop_toBottomOf="@+id/goingback" />
-
                 <Button
-                    android:id="@+id/entercostumetime"
+                    android:id="@+id/entercustomtime"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="60dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="15dp"
                     android:background="@drawable/rect"
                     android:backgroundTint="@color/lightPurple"
                     android:fontFamily="@font/avant_bold"
@@ -143,39 +135,32 @@ more challenging."
                     android:textSize="20dp"
                     android:visibility="invisible"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/startb"
+                    app:layout_constraintTop_toBottomOf="@+id/timeview"
                     tools:visibility="visible" />
-
                 <EditText
-                    android:id="@+id/timecostumeEdit"
+                    android:id="@+id/timecustomEdit"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="20dp"
-                    android:textAlignment="center"
-                    android:layout_marginTop="120dp"
                     android:ems="10"
                     android:fontFamily="@font/avant_bold"
                     android:hint="10"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:padding="8dp"
+                    android:textAlignment="center"
                     android:textColor="@color/darkPurple"
+                    android:backgroundTint="@color/darkPurple"
                     android:textSize="20dp"
                     android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.865"
-                    app:layout_constraintStart_toEndOf="@+id/entercostumetime"
-                    app:layout_constraintTop_toBottomOf="@+id/resetb"
+                    app:layout_constraintStart_toEndOf="@+id/entercustomtime"
+                    app:layout_constraintTop_toBottomOf="@+id/timeview"
                     tools:visibility="visible" />
 
-                <Space
-                    android:layout_width="357dp"
-                    android:layout_height="31dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/customtimer" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

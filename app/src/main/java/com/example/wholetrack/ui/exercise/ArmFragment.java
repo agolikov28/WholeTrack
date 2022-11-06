@@ -55,8 +55,8 @@ public class ArmFragment extends Fragment {
         startb = binding.startb;
         resetb = binding.resetb;
         costumeb = binding.customtimer;
-        entertb = binding.entercostumetime;
-        newtime = binding.timecostumeEdit;
+        entertb = binding.entercustomtime;
+        newtime = binding.timecustomEdit;
 
 
         startb.setOnClickListener(new View.OnClickListener() {
