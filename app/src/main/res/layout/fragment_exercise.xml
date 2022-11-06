@@ -1,83 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rect"
+        android:backgroundTint="@color/lightPurple"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/avant_bold"
+            android:lineSpacingExtra="6dp"
             android:orientation="vertical"
-            android:padding="0dp">
+            android:padding="10dp"
+            android:text="CHOOSE THE PART OF THE BODY\nYOU WOULD LIKE TO WORK ON:"
+            android:textAlignment="center"
+            android:textColor="@color/darkPurple"
+            android:textSize="15dp" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:text="Choose which part of your body you would you like
-to work on. There are four options Arms, Legs, Chest and the last one
-is cardio." />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkPurple"
+            android:fontFamily="@font/avant_bold"
+            android:text="Arms"
+            android:textColor="@color/whiteTint"
+            android:textSize="25dp" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="129dp"
-                android:text="Arms"
-                android:background="@color/buttonPurple"
-                android:textColor="@color/buttonWhite" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="13dp" />
+        <Button
+            android:id="@+id/cardio"
+            android:layout_width="150dp"
 
-            <Button
-                android:id="@+id/cardio"
-                android:layout_width="match_parent"
-                android:text="Cardio"
-                android:layout_height="129dp"
-                android:background="@color/buttonPurple"
-                android:textColor="@color/buttonWhite"
-                />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkPurple"
+            android:fontFamily="@font/avant_bold"
+            android:text="Cardio"
+            android:textColor="@color/whiteTint"
+            android:textSize="25dp" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="13dp" />
 
-            <Button
-                android:id="@+id/leg"
-                android:layout_width="match_parent"
-                android:layout_height="129dp"
-                android:text="Legs"
-                android:background="@color/buttonPurple"
-                android:textColor="@color/buttonWhite"/>
+        <Button
+            android:id="@+id/leg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkPurple"
+            android:fontFamily="@font/avant_bold"
+            android:text="Legs"
+            android:textColor="@color/whiteTint"
+            android:textSize="25dp" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="13dp" />
 
-            <Button
-                android:id="@+id/chest"
-                android:layout_width="match_parent"
-                android:layout_height="129dp"
-                android:background="@color/buttonPurple"
-                android:text="chest"
-                android:textColor="@color/buttonWhite" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="61dp" />
-
-        </LinearLayout>
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/chest"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/darkPurple"
+            android:fontFamily="@font/avant_bold"
+            android:text="CHEST"
+            android:textColor="@color/whiteTint"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

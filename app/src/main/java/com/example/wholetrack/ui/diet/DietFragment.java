@@ -82,10 +82,10 @@ public class DietFragment extends Fragment {
         buttonFood.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                if (buttonFood.getText().equals("Close Data Entry")){
+                if (buttonFood.getText().equals("GO BACK")){
                     foodForm.setVisibility(View.GONE);
                     buttonFood.setText("Enter New Data");
-                    buttonManual.setText("Or Enter Data Manually");
+                    buttonManual.setText("Enter Data Manually");
                     foodName.setText("");
                     foodCalorie.setText("");
                     foodCarb.setText("");
@@ -97,12 +97,12 @@ public class DietFragment extends Fragment {
 
                 } else{
                     foodForm.setVisibility(View.VISIBLE);
-                    buttonFood.setText("Close Data Entry");
+                    buttonFood.setText("GO BACK");
                     manualEnter.setVisibility(View.GONE);
                     foodList.setVisibility(View.VISIBLE);
                     selectLabal.setVisibility(View.VISIBLE);
                     buttonManual.setVisibility(View.VISIBLE);
-                   // manualEnter.setVisibility(View.INVISIBLE);
+                    // manualEnter.setVisibility(View.INVISIBLE);
                 }
 
             }
@@ -111,7 +111,7 @@ public class DietFragment extends Fragment {
         buttonManual.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                if (buttonManual.getText().equals("Or Enter Data Manually")){
+                if (buttonManual.getText().equals("Enter Data Manually")){
 
                     buttonManual.setText("Select From List Instead");
                     foodForm.setVisibility(View.VISIBLE);
@@ -121,7 +121,7 @@ public class DietFragment extends Fragment {
 
 
                 } else{
-                    buttonManual.setText("Or Enter Data Manually");
+                    buttonManual.setText("Enter Data Manually");
 
                     //buttonManual.setVisibility(View.GONE);
                     //foodForm.setVisibility(View.GONE);
@@ -162,7 +162,7 @@ public class DietFragment extends Fragment {
                         }
                         foodForm.setVisibility(View.GONE);
                         buttonFood.setText("Enter New Data");
-                        buttonManual.setText("Or Enter Data Manually");
+                        buttonManual.setText("Enter Data Manually");
                         foodName.setText("");
                         foodCalorie.setText("");
                         foodCarb.setText("");
@@ -178,7 +178,7 @@ public class DietFragment extends Fragment {
                 else {
                     foodForm.setVisibility(View.GONE);
                     buttonFood.setText("Enter New Data");
-                    buttonManual.setText("Or Enter Data Manually");
+                    buttonManual.setText("Enter Data Manually");
                     error.setVisibility(View.GONE);
                     Toast toast = Toast.makeText(getContext(), "Submit not yet implemented", Toast.LENGTH_SHORT);
                     // to show the toast
@@ -200,7 +200,7 @@ public class DietFragment extends Fragment {
             }
         });
 
-       // dietViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        // dietViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
