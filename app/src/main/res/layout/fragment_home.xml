@@ -23,21 +23,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/avant_med"
+                android:fontFamily="@font/avant_bold"
                 android:text="Welcome back, Jane!"
                 android:textColor="@color/darkPurple"
-                android:textSize="20dp" />
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/sleepAnalysis2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
                 android:fontFamily="@font/avant_med"
-                android:text="\nCurrent Weight: 155lbs\nBMI: 26
-                \nMeeting exercise goal:YES\nMeeting diet goal: YES\nMeeting Sleep goal: NO\n"
-                android:textAlignment="center"
+                android:text="Current Weight: 155lbs\nBMI: 26
+                \nMeeting exercise goal?  YES\nMeeting diet goal?  YES\nMeeting sleep goal?  NO"
+                android:lineSpacingExtra="7dp"
                 android:textColor="@color/darkPurple"
-                android:textSize="15dp" />
+                android:textSize="20dp" />
 
             <Button
                 android:id="@+id/button0"
@@ -58,13 +62,14 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/avant_med"
-                android:text="\nExercise Summary:"
+                android:text="Exercise Summary:"
                 android:textColor="@color/darkPurple"
                 android:textSize="20dp" />
             <ImageView
                 android:id="@+id/chartImg0"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="250dp"
+                android:layout_gravity="center"
                 android:src="@drawable/weeklyworkouts" />
             <Button
                 android:id="@+id/button1"
@@ -85,7 +90,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/avant_med"
-                android:text="\nDiet Summary:"
+                android:text="Diet Summary:"
                 android:textColor="@color/darkPurple"
                 android:textSize="20dp" />
 
@@ -100,6 +105,7 @@
                 android:layout_width="285dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rect"
                 android:backgroundTint="@color/lightPurple"
                 android:fontFamily="@font/avant_bold"
@@ -114,19 +120,22 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/avant_med"
-                android:text="\nSleep Summary:"
+                android:text="Sleep Summary:"
                 android:textColor="@color/darkPurple"
                 android:textSize="20dp" />
 
             <ImageView
                 android:id="@+id/chartImg2"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="250dp"
+                android:layout_gravity="center"
                 android:src="@drawable/chart_exbet" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="285dp"
+                android:layout_marginTop="10dp"
+
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:background="@drawable/rect"
