@@ -77,12 +77,12 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:fontFamily="@font/avant_med"
+                    android:padding="15dp"
                     android:text="For the arms, you will be doing push ups, biceps curls and pull ups. Try to do these three exercises in 10 minutes
 with 1 minute of rest each time. Use the timer below to track you workout. You can
 customize the timer to make it more challenging."
                     android:textColor="@color/darkPurple"
                     android:textSize="20dp"
-                    android:padding="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/goingback" />
 
@@ -146,6 +146,7 @@ customize the timer to make it more challenging."
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/darkPurple"
                     android:ems="10"
                     android:fontFamily="@font/avant_bold"
                     android:hint="10"
@@ -153,7 +154,6 @@ customize the timer to make it more challenging."
                     android:padding="8dp"
                     android:textAlignment="center"
                     android:textColor="@color/darkPurple"
-                    android:backgroundTint="@color/darkPurple"
                     android:textSize="20dp"
                     android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -246,6 +246,14 @@ customize the timer to make it more challenging."
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/textView14"
                     app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+                <Space
+                    android:layout_width="350dp"
+                    android:layout_height="77dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
