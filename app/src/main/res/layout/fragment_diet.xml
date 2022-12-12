@@ -20,7 +20,7 @@
                 android:id="@+id/enterFood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enter New Data" />
+                android:text="Enter Food Item" />
 
             <LinearLayout
                 android:id="@+id/foodForm"
@@ -33,7 +33,7 @@
                     android:id="@+id/buttonManual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Or Enter Data Manually" />
+                    android:text="Or Enter Food Item Manually" />
 
                 <TextView
                     android:id="@+id/foodListLabel"
@@ -161,8 +161,9 @@
                             android:inputType="number" />
                     </LinearLayout>
 
-                    <Switch
-                        android:id="@+id/saveForLater"
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Save Food For Later?" />
@@ -182,7 +183,7 @@
                     android:id="@+id/submitFoodForm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Submit" />
+                    android:text="Save" />
             </LinearLayout>
 
             <TextView

@@ -35,7 +35,6 @@ import java.nio.charset.StandardCharsets;
 public class DietFragment extends Fragment {
 
     private FragmentDietBinding binding;
-    public int test = 1;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DietViewModel dietViewModel =
@@ -61,7 +60,7 @@ public class DietFragment extends Fragment {
         foodFat = binding.foodFat;
         foodCarb = binding.foodCarb;
         foodProtein = binding.foodProtein;
-        Switch save = binding.saveForLater;
+
         Button submitFood = binding.submitFoodForm;
         LinearLayout manualEnter = binding.manualEnter;
         Button buttonManual = binding.buttonManual;
@@ -82,10 +81,10 @@ public class DietFragment extends Fragment {
         buttonFood.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                if (buttonFood.getText().equals("Close Data Entry")){
+                if (buttonFood.getText().equals("Close Food Entry")){
                     foodForm.setVisibility(View.GONE);
-                    buttonFood.setText("Enter New Data");
-                    buttonManual.setText("Or Enter Data Manually");
+                    buttonFood.setText("Enter Food Item");
+                    buttonManual.setText("Or Enter Food Item Manually");
                     foodName.setText("");
                     foodCalorie.setText("");
                     foodCarb.setText("");
@@ -97,7 +96,7 @@ public class DietFragment extends Fragment {
 
                 } else{
                     foodForm.setVisibility(View.VISIBLE);
-                    buttonFood.setText("Close Data Entry");
+                    buttonFood.setText("Close Food Entry");
                     manualEnter.setVisibility(View.GONE);
                     foodList.setVisibility(View.VISIBLE);
                     selectLabal.setVisibility(View.VISIBLE);
@@ -111,9 +110,9 @@ public class DietFragment extends Fragment {
         buttonManual.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
-                if (buttonManual.getText().equals("Or Enter Data Manually")){
+                if (buttonManual.getText().equals("Or Enter Food Item Manually")){
 
-                    buttonManual.setText("Select From List Instead");
+                    buttonManual.setText("Select Food From List Instead");
                     foodForm.setVisibility(View.VISIBLE);
                     selectLabal.setVisibility(View.GONE);
                     foodList.setVisibility(View.GONE);
@@ -121,7 +120,7 @@ public class DietFragment extends Fragment {
 
 
                 } else{
-                    buttonManual.setText("Or Enter Data Manually");
+                    buttonManual.setText("Or Enter Food Item Manually");
 
                     //buttonManual.setVisibility(View.GONE);
                     //foodForm.setVisibility(View.GONE);
@@ -157,12 +156,12 @@ public class DietFragment extends Fragment {
                         error.setVisibility(View.GONE);
                         foodForm.setVisibility(View.GONE);
 
-                        if (save.isChecked()){
-                            // save to food list
-                        }
+//                        if (save.isChecked()){
+//                            // save to food list
+//                        }
                         foodForm.setVisibility(View.GONE);
-                        buttonFood.setText("Enter New Data");
-                        buttonManual.setText("Or Enter Data Manually");
+                        buttonFood.setText("Enter Food Item");
+                        buttonManual.setText("Or Enter Food Item Manually");
                         foodName.setText("");
                         foodCalorie.setText("");
                         foodCarb.setText("");
@@ -177,7 +176,7 @@ public class DietFragment extends Fragment {
                 }
                 else {
                     foodForm.setVisibility(View.GONE);
-                    buttonFood.setText("Enter New Data");
+                    buttonFood.setText("Enter Food Item");
                     buttonManual.setText("Or Enter Data Manually");
                     error.setVisibility(View.GONE);
                     Toast toast = Toast.makeText(getContext(), "Submit not yet implemented", Toast.LENGTH_SHORT);
